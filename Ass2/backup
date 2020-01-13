@@ -1,0 +1,53 @@
+#!/bin/bash
+#Kyjauna Marshall 260802473
+if [ $# -lt 3 ] # checks if the number of arguments is correct
+then 
+	echo "You have the incorrect number of arguments. The correct syntax is:	 ./backup SWITCH FILES DEST MESSAGE. Please try again."
+	exit 1
+fi 
+
+if [ "$1" != "-D" ] #checks if the switch is being used to delete orinal files
+then	
+mkdir -p $2  #making DEST if it does not exist already
+now='date +%d-%m-%y' #setting date to a global variable
+cd $2 
+tar -cf backup$now.tar $1 #creates tar file
+chmod =600 backup$now.tar #changes permissions to read + write for user
+
+date='date +%d-%m-%y' #formatting date 
+time='date +"%T"' #formatting time
+echo -n "$date $time" >> backups.log #appending date and time to backups.log
+
+shift 2
+
+for i in "$@"
+do
+       	echo -n "$i" >> backups.log #append $i to backup log
+done
+echo " "
+echo " "
+
+else #3
+	mkdir -p $3  #4
+	now='date +%d-%m-%y'
+cd $3
+tar -cf backup$now.tar $2 #creates tar file
+cd $2
+rm -r $2 
+cd $3
+
+chmod =600 backup$now.tar # changes permissions
+date='date +%d-%m-%y'
+time='date +"%T"'
+echo -n "$date $time %4" >> backups.log #appends date and time to the backup.log
+
+shift 3
+
+for i in "$@"
+do echo -n " $i" >> backupslog
+done
+
+	echo " "
+	echo " "
+fi
+

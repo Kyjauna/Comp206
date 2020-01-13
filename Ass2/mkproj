@@ -1,0 +1,28 @@
+#!/bin/bash
+#Kyjauna Marshall 260802473
+if [ "$#" -ne 2 ] #if the number of arguments is not 2 then show error
+then
+	echo "Error: Wrong number of arguments. Please type ./mkproj ARGUMENT OW	NER. The argument is the name of the project. The OWNER is the user name	 the porject belongs to."
+	exit 1 
+fi 
+
+mkdir -p Projects #make projects directory, if exists do nothing
+cd Projects #open project directory
+if [ -d $1 ]; #checks if the ARGUMENT exits, if it does returns error
+then
+	echo "Error: The project name has already been used. Please select anoth	er project name and try again."
+exit 1
+
+else
+mkdir $1 #if it doesnt exist it makes the directory
+fi # end if statement
+cd $1 # opens new argument directory
+
+mkdir archive backup docs assets database source #makes the following directories within ARGUEMENT directory
+ls #lists the newly made directories for verification
+cd docs # changes working directory to docs
+
+echo "Created by: $2" >> readme.txt #creates readme file with OWNER
+
+cat readme.txt #displays readme
+

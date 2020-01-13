@@ -1,0 +1,39 @@
+commit 27397ae1a35cc0d379f7ec6a9fc5b36bc0852ebe (HEAD -> master, origin/master, origin/HEAD)
+Author: Kyjauna <kyjauna.marshall@mail.mcgill.ca>
+Date:   Mon Nov 25 13:52:43 2019 -0500
+
+proper makefile
+
+commit 41bf60e2661d71345c609323bdb21ecd912636f0
+Author: Kyjauna <kyjauna.marshall@mail.mcgill.ca>
+Date:   Sun Nov 24 23:08:14 2019 -0500
+
+wrong makefile
+
+commit 934015f1a825824204d4e5abb203c5f79ea75cc0
+Author: Kyjauna <kyjauna.marshall@mail.mcgill.ca>
+Date:   Sun Nov 24 16:37:12 2019 -0500
+
+makefile
+
+commit 58fc8d89533b1661646f0e35ce3702216d97c1d7
+Author: Kyjauna <kyjauna.marshall@mail.mcgill.ca>
+Date:   Sat Nov 23 16:02:39 2019 -0500
+
+linked.c
+
+commit 9b17aeb11056548b043073a9532dcdc5a172d773
+Author: Kyjauna <kyjauna.marshall@mail.mcgill.ca>
+Date:   Fri Nov 22 12:33:18 2019 -0500
+
+main.c
+
+commit 880c4ea0b52de97e005ffaa74de5975e588b3cff
+Author: Kyjauna <kyjauna.marshall@mail.mcgill.ca>
+Date:   Thu Nov 21 22:05:14 2019 -0500
+
+need to re-add for global username
+
+commit 27397ae1a35cc0d379f7ec6a9fc5b36bc0852ebe
+Author: Kyjauna <kyjauna.marshall@mail.mcgill.ca>
+Date:   Wed Nov 20 18:46:01 2019 -0500
